@@ -1,0 +1,24 @@
+[
+  {
+    "term_or_constraint": "squats",
+    "clarify_options": [
+      "barbell back squat",
+      "front squat",
+      "goblet squat",
+      "hack squat",
+      "machine squat",
+      "box squat"
+    ],
+    "recommended_alternatives": [
+      "leg press",
+      "split squat",
+      "step-up",
+      "leg extension (quad focus)"
+    ],
+    "graded_exposure_examples": [
+      "bodyweight squat range limit → goblet squat → front squat"
+    ],
+    "references": []
+  }
+]
+

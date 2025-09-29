@@ -1,0 +1,155 @@
+{
+  "title": "Dumbbell Only: 3 Day Full Body Workout",
+  "url": "https://www.muscleandstrength.com/workouts/3-day-full-body-dumbbell-workout",
+  "summary": {
+    "main_goal": "Build Muscle",
+    "workout_type": "Full Body",
+    "training_level": "Beginner",
+    "program_duration": "12 weeks",
+    "days_per_week": "3",
+    "time_per_workout": "45-60 minutes",
+    "equipment_required": "Dumbbells",
+    "target_gender": "Male & Female",
+    "reads": "9.8M",
+    "recommended_supplements": ["Whey Protein", "Creatine", "Multivitamin"]
+  },
+  "description": "This 3 day dumbbell only routine uses just dumbbells and is perfect for the beginner looking to build lean muscle mass at home or on the go!",
+  "workout_schedule": {
+    "Day 1": {
+      "muscle_groups": "Full Body",
+      "exercises": [
+        {
+          "name": "Dumbbell Squat",
+          "sets": "3",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Bench Press",
+          "sets": "3",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Bent Over Row",
+          "sets": "3",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Overhead Press",
+          "sets": "2",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Romanian Deadlift",
+          "sets": "2",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Bicep Curl",
+          "sets": "2",
+          "reps": "8-12"
+        },
+        {
+          "name": "Dumbbell Tricep Extension",
+          "sets": "2",
+          "reps": "8-12"
+        }
+      ]
+    },
+    "Day 2": {
+      "muscle_groups": "Rest Day",
+      "exercises": []
+    },
+    "Day 3": {
+      "muscle_groups": "Full Body",
+      "exercises": [
+        {
+          "name": "Dumbbell Deadlift",
+          "sets": "3",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Incline Bench Press",
+          "sets": "3",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell One Arm Row",
+          "sets": "3",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "2",
+          "reps": "8-12"
+        },
+        {
+          "name": "Dumbbell Lunge",
+          "sets": "2",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Hammer Curl",
+          "sets": "2",
+          "reps": "8-12"
+        },
+        {
+          "name": "Dumbbell Floor Press",
+          "sets": "2",
+          "reps": "8-12"
+        }
+      ]
+    },
+    "Day 4": {
+      "muscle_groups": "Rest Day",
+      "exercises": []
+    },
+    "Day 5": {
+      "muscle_groups": "Full Body",
+      "exercises": [
+        {
+          "name": "Dumbbell Goblet Squat",
+          "sets": "3",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Pullover",
+          "sets": "3",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Reverse Fly",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Dumbbell Arnold Press",
+          "sets": "2",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Stiff Leg Deadlift",
+          "sets": "2",
+          "reps": "8-10"
+        },
+        {
+          "name": "Dumbbell Concentration Curl",
+          "sets": "2",
+          "reps": "8-12"
+        },
+        {
+          "name": "Dumbbell Kickback",
+          "sets": "2",
+          "reps": "8-12"
+        }
+      ]
+    }
+  },
+  "additional_info": {
+    "rest_periods": "1-2 minutes between sets",
+    "progression": "Increase weight when you can perform the upper end of the rep range for all sets",
+    "schedule": "3 days per week with at least 1 rest day between workouts",
+    "nutrition": "Focus on adequate protein intake to support muscle growth",
+    "notes": "Perfect for beginners with limited equipment. Focus on proper form over heavy weight.",
+    "pdf_download": "https://www.muscleandstrength.com/sites/default/files/workouts/dumbbell3day.pdf"
+  }
+}

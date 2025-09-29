@@ -1,0 +1,220 @@
+{
+  "title": "4 Day Maximum Mass Workout",
+  "url": "https://www.muscleandstrength.com/workouts/4-day-maximum-mass-workout",
+  "summary": {
+    "main_goal": "Build Muscle",
+    "workout_type": "Split",
+    "training_level": "Intermediate",
+    "program_duration": "8 weeks",
+    "days_per_week": "4",
+    "time_per_workout": "45-60 minutes",
+    "equipment_required": "Barbell, Bodyweight, Dumbbells, Machines",
+    "target_gender": "Male & Female",
+    "reads": "9.6M",
+    "recommended_supplements": ["100% Whey Protein", "Creatine Monohydrate", "Weight Gainer (Optional)", "Pre-Workout (Optional)", "BCAAs (Optional)"]
+  },
+  "description": "A mass building routine that features a great combination of effective compound and isolation movements along with intense, high impact five minute burn sets.",
+  "workout_schedule": {
+    "Day 1": {
+      "muscle_groups": "Back & Biceps",
+      "exercises": [
+        {
+          "name": "Deadlift",
+          "sets": "2",
+          "reps": "5"
+        },
+        {
+          "name": "One Arm Dumbbell Row",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Wide Grip Pull Up or Lat Pull Down",
+          "sets": "3",
+          "reps": "10-12"
+        },
+        {
+          "name": "Barbell Row",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Seated Cable Row or Machine Row",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        },
+        {
+          "name": "EZ Bar Preacher Curl",
+          "sets": "3",
+          "reps": "10-12"
+        },
+        {
+          "name": "Concentration Curl",
+          "sets": "3",
+          "reps": "10-12"
+        },
+        {
+          "name": "Seated Dumbbell Curl",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        }
+      ]
+    },
+    "Day 2": {
+      "muscle_groups": "Chest & Triceps",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "sets": "3",
+          "reps": "6-10"
+        },
+        {
+          "name": "Incline Dumbbell Bench Press",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Chest Dip",
+          "sets": "3",
+          "reps": "AMRAP"
+        },
+        {
+          "name": "Cable Crossover or Pec Dec",
+          "sets": "3",
+          "reps": "12-15"
+        },
+        {
+          "name": "Machine Press or Dumbbell Bench Press",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        },
+        {
+          "name": "EZ Bar Skullcrusher",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Two Arm Seated Dumbbell Extension",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Cable Tricep Extension",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        }
+      ]
+    },
+    "Day 3": {
+      "muscle_groups": "Rest",
+      "exercises": []
+    },
+    "Day 4": {
+      "muscle_groups": "Quads, Hamstrings, and Calves",
+      "exercises": [
+        {
+          "name": "Squat",
+          "sets": "3",
+          "reps": "6-10"
+        },
+        {
+          "name": "Leg Press",
+          "sets": "3",
+          "reps": "15-20"
+        },
+        {
+          "name": "Hack Squat or Dumbbell Lunge",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Leg Extension",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        },
+        {
+          "name": "Stiff Leg Deadlift",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Leg Curl",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        },
+        {
+          "name": "Standing Calf Raise",
+          "sets": "3",
+          "reps": "10-15"
+        },
+        {
+          "name": "Seated Calf Raise",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        }
+      ]
+    },
+    "Day 5": {
+      "muscle_groups": "Shoulders, Traps, and Forearms",
+      "exercises": [
+        {
+          "name": "Seated Barbell Press",
+          "sets": "3",
+          "reps": "6-10"
+        },
+        {
+          "name": "Seated Arnold Press",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Dumbbell Lateral Raise",
+          "sets": "3",
+          "reps": "10-15"
+        },
+        {
+          "name": "Hammer Strength Press or Smith Press",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        },
+        {
+          "name": "Upright Row",
+          "sets": "3",
+          "reps": "8-12"
+        },
+        {
+          "name": "Barbell Shrug or Dumbbell Shrug",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        },
+        {
+          "name": "Seated Barbell Wrist Curl",
+          "sets": "3",
+          "reps": "12-15"
+        },
+        {
+          "name": "Barbell Static Hold",
+          "sets": "5 Minutes",
+          "reps": "Burn"
+        }
+      ]
+    },
+    "Day 6": {
+      "muscle_groups": "Rest",
+      "exercises": []
+    },
+    "Day 7": {
+      "muscle_groups": "Rest",
+      "exercises": []
+    }
+  },
+  "additional_info": {
+    "rest_periods": "2 minutes between sets for regular exercises",
+    "progression": "Add weight when you can perform comfortable reps on each set. Use progressive overload principle.",
+    "schedule": "4 days per week: Day 1 (Back/Biceps), Day 2 (Chest/Triceps), Day 3 (Rest), Day 4 (Legs), Day 5 (Shoulders/Traps/Forearms), Day 6-7 (Rest)",
+    "nutrition": "Eat BIG - at least 5 large meals per day to support muscle growth",
+    "notes": "Features 5-minute burn sets for each body part. AMRAP = As Many Reps As Possible. Do not train to failure on regular sets.",
+    "burn_sets": "5 minute burn periods: Pick weight for 12-15 reps, perform as many reps as possible in 5 minutes with minimal rest",
+    "pdf_download": "https://www.muscleandstrength.com/sites/default/files/workouts/4daymaximum_0.pdf"
+  }
+}

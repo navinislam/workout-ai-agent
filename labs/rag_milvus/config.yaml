@@ -1,0 +1,9 @@
+collection: docs
+dim: 1536
+index:
+  index_type: IVF_FLAT
+  metric_type: COSINE
+  params:
+    nlist: 1024
+top_k: 5
+
