@@ -1,7 +1,5 @@
 import json
 import os
-import json
-import asyncio
 from typing import Optional, List, Dict, Any
 
 from dotenv import load_dotenv
@@ -17,7 +15,8 @@ from app.models.schemas import (
 from app.rag.milvus_rag import ingest_exercises, search_exercises
 
 
-from agents import Agent, Runner, RunResult, function_tool
+from agents import Agent, RunResult, function_tool
+from app.agents.utils import run_agent_sync
 
 
 load_dotenv()
@@ -50,6 +49,7 @@ def search_exercise_sub(
     top_k: int = 15,
 ) -> List[Exercise]:
     """Return substitution candidates, excluding avoid terms and duplicates."""
+    print(f"      🔍 Tool called: search_exercise_sub(exercise='{exercise}', pattern={pattern})")
     results = search_exercises(query=exercise, pattern=pattern, top_k=top_k)
 
     avoid: set[str] = set()
@@ -69,6 +69,7 @@ def search_exercise_sub(
             continue
         seen.add(lname)
         out.append(Exercise(name=name))
+    print(f"         → Found {len(out)} substitution candidates")
     return out
 
 
@@ -79,7 +80,7 @@ agent = Agent(
     tools=[search_exercise_sub],  # Register the function in the agent
 )
 
-async def return_best_substitution_exercise(
+def return_best_substitution_exercise(
     exercise: Exercise,
     *,
     pattern: Optional[str] = None,
@@ -110,7 +111,8 @@ async def return_best_substitution_exercise(
     )
 
     def _run_once() -> Optional[Exercise]:
-        result: RunResult = Runner.run_sync(
+        print(f"🤖 Using LLM for: substitute_exercise ({exercise.name})")
+        result: RunResult = run_agent_sync(
             agent,
             input=(instructions + "\nPayload:\n" + json.dumps(payload, ensure_ascii=False)),
         )
@@ -199,9 +201,6 @@ def substitute_plan_exercises(plan: WorkoutPlan, profile: UserProfile) -> Workou
                         avoid_terms=sorted(list(avoids)),
                         top_k=15,
                     )
-                    # If running in a non-async context, execute the coroutine
-                    if asyncio.iscoroutine(pick):
-                        pick = asyncio.run(pick)  # type: ignore
                     if pick is not None:
                         replacement_name = pick.name
                 except Exception:
@@ -271,8 +270,6 @@ def suggest_substitutions(plan: WorkoutPlan, profile: UserProfile) -> List[Dict[
                         avoid_terms=sorted(list(avoids)),
                         top_k=15,
                     )
-                    if asyncio.iscoroutine(pick):
-                        pick = asyncio.run(pick)  # type: ignore
                     if pick is not None and str(pick.name).strip():
                         best_name = str(pick.name).strip()
                 except Exception:

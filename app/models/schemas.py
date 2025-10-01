@@ -1,5 +1,12 @@
+from enum import Enum
 from typing import List, Optional, Literal, Dict, Any
 from pydantic import BaseModel, Field
+
+
+class TrainingHistory(str, Enum):
+    advanced = "advanced"
+    intermediate = "intermediate"
+    beginner = "beginner"
 
 
 class Exercise(BaseModel):
@@ -21,7 +28,7 @@ class UserProfile(BaseModel):
     age: Optional[int] = None
     height_cm: Optional[float] = None
     weight_kg: Optional[float] = None
-    training_history: Optional[str] = None
+    training_history: Optional[TrainingHistory] = None
     training_age_years: Optional[float] = None
     days_per_week: int = 4
     minutes_per_day: int = 60

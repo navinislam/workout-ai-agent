@@ -57,6 +57,7 @@ clarity_agent = Agent(
 
 async def clarify_profile(message: str) -> Tuple[Dict, List[str]]:
     """Run the clarity agent and return (profile_patch, questions)."""
+    print(f"🤖 Using LLM for: clarify_profile (parsing user message)")
     result: RunResult = await Runner.run(clarity_agent, input=message)
     out = result.final_output or "{}"
     try:

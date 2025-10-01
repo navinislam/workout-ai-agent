@@ -11,7 +11,8 @@ import json
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-from agents import Agent, Runner, RunResult, function_tool
+from agents import Agent, RunResult, function_tool
+from app.agents.utils import run_agent_sync
 
 
 CONSTRAINTS_PATH = Path("data/constraints_guidelines.json")
@@ -47,17 +48,17 @@ resolver_agent = Agent(
         "Use the tool to get known clarify options. For unknown terms, include the term itself. "
         "Return STRICT JSON with keys: expanded (list[str]), clarifications (object mapping original term -> variants list)."
     ),
-    tools=[lookup_avoid_variants],
 )
 
 
 def resolve_avoid_terms(terms: List[str]) -> Tuple[List[str], Dict[str, List[str]]]:
     """Expand ambiguous avoid terms via the Agent + tool."""
+    print(f"🤖 Using LLM for: resolve_avoid_terms (expanding {len(terms)} terms)")
     prompt = (
         "Expand these avoid terms.\n" +
         json.dumps({"terms": terms}, ensure_ascii=False)
     )
-    result: RunResult = Runner.run_sync(resolver_agent, input=prompt)
+    result: RunResult = run_agent_sync(resolver_agent, input=prompt)
     out = result.final_output or "{}"
     try:
         data = json.loads(out)
